@@ -1,0 +1,34 @@
+serverPort: 4002
+baseUrl: api/v1
+
+dataSource:
+  type: "mysql"
+  host: "localhost"
+  port: 3306
+  user: "root"
+  pwd: "Test20220913"
+  db: "allspark"
+
+#bsc
+chainId: 102
+#https节点
+jsonRpc: "https://bsc-dataseed.binance.org"
+#jsonRpc: "https://rpc-mainnet.matic.quiknode.pro"
+
+#wss节点
+nodes:
+  - node: "wss://bsc-mainnet.nodereal.io/ws/v1/8a7a61cfa5eb49339e006f07548072d2"
+#  - node: "wss://polygon-mainnet.nodereal.io/ws/v1/e29346cea52e456584d9fa82d608d6eb"
+
+contracts:
+  - { address: "0xDea33D1504ec80918D8527a444c0B823227a6Bb9",abi: "./allspark.json"}
+#  - { address: "0x9982cAF7CAA37e8Faa4cE3D651E702c9ED0D0D35",abi: "./allspark.json"}
+
+#ping间隔
+WEBSOCKET_PING_INTERVAL: 5000
+#pong超时时间
+WEBSOCKET_PONG_TIMEOUT: 2000
+#重启间隔时间
+WEBSOCKET_RECONNECT_DELAY: 500
+#日志获取间隔
+LOGS_INTERVA: 36000

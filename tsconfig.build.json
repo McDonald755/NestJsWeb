@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "nest-js-web/node_modules",
+    "test", "dist", "**/*spec.ts"]
+}
